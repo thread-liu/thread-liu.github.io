@@ -10,15 +10,19 @@ before_install:
   - cd Blog
   - ls -al
   - npm install hexo-cli -g
+nstall:
+  - npm install
 script:
   - hexo clean
   - hexo generate
+ 
 deploy:
   type: git
-  provider: pages
-  skip-cleanup: true
+  repo: https://github.com/thread-liu/thread-liu.github.io
   github-token: $GH_TOKEN
-  keep-history: true
-  on:
-    all_branches: true # solve a permission problem
-    branch: master
+  branch: master
+
+after_success:
+- git config --global user.name "thread-liu"
+- git config --global user.email "lk9608@outlook.com"
+- hexo deploy
