@@ -19,10 +19,10 @@ script:
 deploy:
   type: git
   repo: https://github.com/thread-liu/thread-liu.github.io
-  github-token: $GH_TOKEN
   branch: master
 
 after_success:
 - git config --global user.name "thread-liu"
 - git config --global user.email "lk9608@outlook.com"
+- sed -i'' "/^ *repo/s~github\.com~${GH_TOKEN}@github.com~" _config.yml
 - hexo deploy
