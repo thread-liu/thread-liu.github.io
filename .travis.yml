@@ -9,9 +9,8 @@ branches:
 before_install:
   - npm install hexo-cli -g
 script:
-  - ls -al
+  - cd Blog
   - hexo generate # generate static files
-  - exit
 deploy:
   provider: pages
   skip-cleanup: true
