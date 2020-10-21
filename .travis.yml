@@ -14,10 +14,12 @@ script:
   - hexo clean
   - hexo generate
 deploy:
+  type: git
   provider: pages
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
+  repo: https://github.com/thread-liu/thread-liu.github.io
   on:
     all_branches: true # solve a permission problem
     branch: master
