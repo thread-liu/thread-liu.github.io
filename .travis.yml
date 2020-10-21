@@ -7,14 +7,19 @@ branches:
   only:
     - main # build master branch only
 before_install:
-  - cd Blog
-  - npm install hexo-cli -g
+- openssl aes-256-cbc -K $encrypted_f217180e22ee_key -iv $encrypted_f217180e22ee_iv
+  -in id_rsa.enc -out id_rsa -d
+- npm install hexo-cli -g
+- eval "$(ssh-agent -s)"
+- chmod 600 id_rsa.enc
+- ssh-add id_rsa.enc
 nstall:
   - npm install
 script:
+  - cd Blog
   - hexo clean
   - hexo generate
- 
+
 deploy:
   type: git
   repo: https://github.com/thread-liu/thread-liu.github.io
