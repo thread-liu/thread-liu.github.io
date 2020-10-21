@@ -7,9 +7,10 @@ branches:
   only:
     - main # build master branch only
 before_install:
+  - cd Blog
+  - ls -al
   - npm install hexo-cli -g
 script:
-  - cd Blog
   - hexo generate # generate static files
 deploy:
   provider: pages
