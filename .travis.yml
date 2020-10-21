@@ -11,7 +11,8 @@ before_install:
   - ls -al
   - npm install hexo-cli -g
 script:
-  - hexo generate # generate static files
+  - hexo clean
+  - hexo generate
 deploy:
   provider: pages
   skip-cleanup: true
@@ -20,4 +21,3 @@ deploy:
   on:
     all_branches: true # solve a permission problem
     branch: master
-  local-dir: public
