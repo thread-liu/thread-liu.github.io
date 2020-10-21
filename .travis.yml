@@ -6,8 +6,12 @@ cache: npm
 branches:
   only:
     - main # build master branch only
+before_install:
+  - npm install hexo-cli -g
 script:
+  - ls -al
   - hexo generate # generate static files
+  - exit
 deploy:
   provider: pages
   skip-cleanup: true
