@@ -8,7 +8,6 @@ branches:
     - main # build master branch only
 before_install:
   - cd Blog
-  - ls -al
   - npm install hexo-cli -g
 nstall:
   - npm install
@@ -22,6 +21,7 @@ deploy:
   branch: master
 
 after_success:
+  - ls -al
   - git config --global user.name "thread-liu"
   - git config --global user.email "lk9608@outlook.com"
   - sed -i'' "/^ *repo/s~github\.com~${GH_TOKEN}@github.com~" _config.yml
