@@ -181,7 +181,7 @@
     # Index Page
     #---------------------------
     index:
-      banner_img: /img/default.png
+      banner_img: /img/Trio.jpg
       banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
       banner_mask_alpha: 0.5  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
       post_default_img: '' # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
@@ -199,7 +199,7 @@
     # 通过 hexo new page 命令创建的页面
     # Custom Page
     page:
-      banner_img: /img/default.png
+      banner_img: /img/Trio.jpg
       banner_img_height: 60  # available: 0 - 100
       banner_mask_alpha: 0.3  # available: 0 - 1.0
 
@@ -208,7 +208,7 @@
     # Post Page
     #---------------------------
     post:  # 部分配置同时控制自定义页面，注意备注
-      banner_img: /img/default.png
+      banner_img: /img/Panes.jpg
       banner_img_height: 70  # available: 0 - 100
       banner_mask_alpha: 0.3  # available: 0 - 1.0
       meta:  # 文章标题下方的信息
@@ -346,7 +346,7 @@
     # Archive Page
     #---------------------------
     archive:
-      banner_img: /img/back.png
+      banner_img: /img/Sheet.jpg
       banner_img_height: 60  # available: 0 - 100
       banner_mask_alpha: 0.3  # available: 0 - 1.0
       subtitle:  # 打字机内容
@@ -356,7 +356,7 @@
     # Categories Page
     #---------------------------
     category:
-      banner_img: /img/back.png
+      banner_img: /img/Shell.jpg
       banner_img_height: 60  # available: 0 - 100
       banner_mask_alpha: 0.3  # available: 0 - 1.0
       subtitle:  # 打字机内容
@@ -369,7 +369,7 @@
     # Tags Page
     #---------------------------
     tag:
-      banner_img: /img/back.png
+      banner_img: /img/Spectre.jpg
       banner_img_height: 80  # available: 0 - 100
       banner_mask_alpha: 0.3  # available: 0 - 1.0
       subtitle:  # 打字机内容
@@ -386,7 +386,7 @@
     # About Page
     #---------------------------
     about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.com/docs/guide/#%E5%85%B3%E4%BA%8E%E9%A1%B5
-      banner_img: /img/back.png
+      banner_img: /img/Veil.jpg
       banner_img_height: 60  # available: 0 - 100
       banner_mask_alpha: 0.3  # available: 0 - 1.0
       subtitle:  # 打字机内容
@@ -404,7 +404,7 @@
     # 404 Page
     #---------------------------
     page404:
-      banner_img: /img/back.png
+      banner_img: /img/Blue_Light.jpg
       banner_img_height: 85  # available: 0 - 100
       banner_mask_alpha: 0.3  # available: 0 - 1.0
       subtitle: 'Page not found'  # 打字机内容
@@ -415,7 +415,7 @@
     # Links Page
     #---------------------------
     links:
-      banner_img: /img/back.png
+      banner_img: /img/Byte_Lights.jpg
       banner_img_height: 60  # available: 0 - 100
       banner_mask_alpha: 0.3  # available: 0 - 1.0
       subtitle:  # 打字机内容

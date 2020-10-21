@@ -4,13 +4,19 @@
   
   
   <entry>
-    <title>阿巴阿巴</title>
-    <link href="/2020/10/21/%E9%98%BF%E5%B7%B4%E9%98%BF%E5%B7%B4/"/>
-    <url>/2020/10/21/%E9%98%BF%E5%B7%B4%E9%98%BF%E5%B7%B4/</url>
+    <title>docker test</title>
+    <link href="/2020/10/21/docker-test/"/>
+    <url>/2020/10/21/docker-test/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>]]></content>
+    <content type="html"><![CDATA[<p>Docker 是一个开源的应用容器引擎，基于 <a href="https://www.runoob.com/go/go-tutorial.html">Go 语言</a> 并遵从 Apache2.0 协议开源。</p><p>Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</p><p>容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。</p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>docker</tag>
+      
+    </tags>
     
   </entry>
   
