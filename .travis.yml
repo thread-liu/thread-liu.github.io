@@ -3,11 +3,11 @@ language: node_js
 notifications:
   email: false
 node_js:
-  - 10 # use nodejs v10 LTS
+- 10
 cache: npm
 branches:
   only:
-    - main # build master branch only
+  - main
 before_install:
 - openssl aes-256-cbc -K $encrypted_f217180e22ee_key -iv $encrypted_f217180e22ee_iv
   -in id_rsa.enc -out id_rsa -d
@@ -16,20 +16,18 @@ before_install:
 - chmod 600 id_rsa.enc
 - ssh-add id_rsa.enc
 nstall:
-  - npm install
+- npm install
 script:
-  - cd Blog
-  - hexo clean
-  - hexo generate
-
+- cd Blog
+- hexo clean
+- hexo generate
 deploy:
   type: git
   repo: https://github.com/thread-liu/thread-liu.github.io
   branch: master
-
 after_success:
-  - ls -al
-  - git config --global user.name "thread-liu"
-  - git config --global user.email "lk9608@outlook.com"
-  - sed -i'' "/^ *repo/s~github\.com~${GH_TOKEN}@github.com~" _config.yml
-  - hexo deploy
+- ls -al
+- git config --global user.name "thread-liu"
+- git config --global user.email "lk9608@outlook.com"
+- sed -i'' "/^ *repo/s~github\.com~${GH_TOKEN}@github.com~" _config.yml
+- hexo deploy
