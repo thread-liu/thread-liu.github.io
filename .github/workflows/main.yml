@@ -23,6 +23,7 @@ jobs:
     - name: Setup Hexo Dependencies
       run: |
         cd Blog
+        ls -al
         npm install hexo-cli -g
         npm install hexo-deployer-git --save
         npm install
@@ -44,6 +45,7 @@ jobs:
 
     - name: Deploy Hexo
       run: |
+        cd Blog
         ls -al
         hexo clean
         hexo generate
