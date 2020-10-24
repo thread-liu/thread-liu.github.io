@@ -1,11 +1,15 @@
 # workflow name
 name: Hexo Blog CI
 
-# master branch on push, auto run
 on:
+  # Runs at 00:00 UTC on the 1, 8, 15, 22 and 29th of every month
+  schedule:
+    - cron:  '0 0 */7 * *'
   push:
-    branches:
-      - main
+    branches: [ main ]
+
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
@@ -23,7 +27,6 @@ jobs:
     - name: Setup Hexo Dependencies
       run: |
         cd Blog
-        ls -al
         npm install hexo-cli -g
         npm install hexo-deployer-git --save
         npm install
@@ -46,7 +49,6 @@ jobs:
     - name: Deploy Hexo
       run: |
         cd Blog
-        ls -al
         hexo clean
         hexo generate
         hexo deploy
