@@ -1,7 +1,8 @@
 ---
-title: Emscripten 使用指南
-date: 2020-11-7
-tags: Emscripten
+title: emscripten 使用指南
+index_img: /img/web.png
+date: 2020-11-07 23:00:00
+tags: [emscripten, webassembly]
 ---
 
 ## 要事优先

@@ -1,7 +1,8 @@
 ---
 title: docker
+index_img: /img/Docker.png
 date: 2020-10-21 15:35:57
-tags: docker
+tags: [docker]
 ---
 
 Docker 是一个开源的应用容器引擎，基于 [Go 语言](https://www.runoob.com/go/go-tutorial.html) 并遵从 Apache2.0 协议开源。
