@@ -1,7 +1,7 @@
 ---
 title: Python-Template 使用指南
 date: 2020-11-2
-tags: Python,Template
+tags: Python-Template
 ---
 
 Template 无疑是一个好东西，可以将字符串的格式固定下来，重复利用。同时 Template 也可以让开发人员可以分别考虑字符串的格式和其内容了，无形中减轻了开发人员的压力。
