@@ -190,7 +190,7 @@
         text: 'world peace and stability'  # 为空则按 hexo config.subtitle 显示
       auto_excerpt:
         enable: true
-      post_url_target: _self  # available: _blank | _self
+      post_url_target: _blank  # available: _blank | _self
       post_meta: # 是否显示文章信息（时间、分类、标签）
         date: true
         category: true
@@ -319,7 +319,7 @@
       lang: zh-CN # zh-CN | zh-TW | en | ja
       visitor: true # 阅读量统计
       highlight: true # 代码高亮
-      recordIP: true # 是否记录评论者IP
+      recordIP: false # 是否记录评论者IP
       serverURLs:  # REST API 服务器地址，国际版不填
       emojiCDN: true # 表情包CDN
     # 畅言
