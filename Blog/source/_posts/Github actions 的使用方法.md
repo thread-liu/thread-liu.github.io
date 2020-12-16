@@ -286,3 +286,26 @@ jobs:
         run: echo All files exists!
 ```
 
+#### Close Stale Issues and PRs
+
+[链接](https://github.com/actions/stale)
+
+> Warns and then closes issues and PRs that have had no activity for a specified amount of time.
+
+```yaml
+name: "Close stale issues"
+on:
+  schedule:
+  - cron: "30 1 * * *"
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'Message to comment on stale issues. If none provided, will not mark issues stale'
+        stale-pr-message: 'Message to comment on stale PRs. If none provided, will not mark PRs stale'
+```
+
